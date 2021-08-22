@@ -1,0 +1,108 @@
+.counter-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.counter-container h1 {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.counter-container h2 {
+    font-size: 28px;
+}
+
+.jackpot-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.jackpot-inputs label {
+    margin-right: 10px;
+}
+
+.jackpot-inputs input {
+    width: 60px;
+}
+
+.jackpot-roller {
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 60px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.jackpot-roller:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.jackpot-results-container {
+    margin-top: 30px;
+    position: relative;
+    width: 400px;
+    z-index: 0;
+    padding: 20px;
+    overflow: hidden;
+    border: 3px solid #000;
+    height: 250px;
+}
+
+.jackpot-spinner-list {
+    width: calc(100% - 40px);
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.jackpot-spinner-list li {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px; 
+    width: 400px;
+}
+
+.jackpot-number {
+    animation: showNumbers 300ms ease-in-out;
+    transform: scale(1);
+    transform-origin: top;
+}
+
+@keyframes showNumbers {
+    0%{transform: scale(0)}
+    100% {transform: scale(1);}
+}
+
+.jackpot-number-decider {
+    display: none;
+    width: calc(100% - 2px);
+    position: absolute;
+    height: 33px;
+    top: calc(50% - 15px);
+    left: 0;
+    border: 3px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    animation: showDecider 400ms ease-in-out;
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes showDecider {
+    0% {opacity: 0; transform: scale(0)}
+    100% {opacity: 1; transform: scale(1)}
+}
+
+
