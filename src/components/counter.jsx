@@ -131,14 +131,6 @@ const Counter = () => {
         return arr;
     };
 
-    const isOdd = (num) => { 
-        if(num % 2 === 0) {
-            return false
-        } else {
-            return true
-        }
-    }
-
     const renderArr = () => {
         if(rangeArr.range.length > 0) {
             let renderList = []
