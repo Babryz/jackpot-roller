@@ -73,7 +73,7 @@ const Counter = () => {
                 },4500)
                 setTimeout(() => {
                     spinnerList.animate([
-                        { top: `${(-spinnerHeight / 2) + 108 }px`  },
+                        { top: `${(-spinnerHeight / 2) + 93 }px`  },
                         { top: '-20px' }
                     ], {
                         // timing options
@@ -167,7 +167,6 @@ const Counter = () => {
                 </ul>
                 <div className="jackpot-number-decider"></div>
             </div>
-            <div>{rngNum}</div>
         </div>
     )
 }

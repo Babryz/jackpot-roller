@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image: url('./assets/casino-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Oleo Script', serif;
 }
 
 .App-logo {
